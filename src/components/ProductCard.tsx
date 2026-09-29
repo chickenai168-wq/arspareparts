@@ -1,0 +1,2 @@
+import Link from 'next/link'; import type {Product} from '@/data/products';
+export default function ProductCard({p}:{p:Product}){return <article className="productCard"><div className="productVisual"><span>ARX</span></div><div className="productBody"><small>{p.category}</small><h3>{p.name}</h3><p>{p.fitment}</p><div className="productMeta"><span>{p.id}</span><Link href={`/products/${p.slug}`}>ดูรายละเอียดสินค้า ↗</Link></div></div></article>}
