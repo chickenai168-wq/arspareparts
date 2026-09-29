@@ -1,0 +1,3 @@
+import Link from 'next/link';
+const social=[['Shopee','https://shopee.co.th/arspareparts'],['TikTok','https://www.tiktok.com/@arspareparts?_r=1&_t=ZS-9A7zrrFblIq'],['Lazada','https://s.lazada.co.th/s.ZQTWKH'],['Facebook','https://www.facebook.com/share/1dNU2tcJm5/']] as const;
+export default function SiteHeader(){return <header className="header"><Link className="brand" href="/">AR <b>SPARE PARTS</b></Link><nav className="nav"><Link href="/">หน้าแรก</Link><Link href="/arx">โช๊ค ARX</Link><Link href="/catalog">อะไหล่ทั้งหมด</Link><Link href="/guide">วิธีเลือกสินค้า</Link></nav><div className="socials">{social.map(([n,u])=><a key={n} href={u} target="_blank" rel="noopener noreferrer" aria-label={n}>{n}</a>)}</div></header>}
