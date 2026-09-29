@@ -9,6 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@vercel/analytics": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
